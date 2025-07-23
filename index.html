@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoYaCali</title>
+  <link rel="stylesheet" href="/Estilos/style.css" />
+</head>
+<body>
+  <header>
+    <h1>AutoYaCali</h1>
+    <nav>
+      <ul>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#reserva">Reserva</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Tu carro, ¡YA! Donde lo necesites en Cali</h2>
+    <p>Entrega rápida a domicilio en toda la ciudad</p>
+  </section>
+
+  <section id="catalogo">
+    <h2>Catálogo de Vehículos</h2>
+    <div class="vehiculo-lista" id="vehiculos">
+      <!-- JS insertará vehículos aquí -->
+    </div>
+  </section>
+
+  <section id="planes">
+    <h2>Planes Especiales</h2>
+    <ul>
+      <li>🚗 Escapada de fin de semana</li>
+      <li>💼 Trabajo remoto sobre ruedas</li>
+      <li>🏞 Turismo local por Cali</li>
+    </ul>
+  </section>
+
+  <section id="reserva">
+    <h2>Reservar Vehículo</h2>
+    <form id="formReserva">
+      <label>Nombre:
+        <input type="text" placeholder="Ingrese su nombre completo" required />
+      </label>
+      <label>Fecha:
+        <input type="date" required />
+      </label>
+      <label>Entrega a domicilio:
+        <input type="text" placeholder="Dirección en Cali" required />
+      </label>
+      <button type="submit">Reservar ahora</button>
+    </form>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Email: contacto@autoyacali.com</p>
+    <p>WhatsApp: +57 300 000 0000</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoYaCali. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="/Scripts/main.js"></script>
+</body>
+</html>
+
