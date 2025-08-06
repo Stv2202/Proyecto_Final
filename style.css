@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary-color: #8a79f0;
+    --primary-color-dark: #2e2a40;
+    --text-dark: #221e36;
+    --text-light: #767268;
+    --extra-light: #f1f2ff;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 3.25rem;
+    text-align: center;
+}
+.section_description{
+    color: var(--extra-light);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.btn{
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--primary-color-dark);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    max-width: 65px;
+}
+
+.logo span{
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul{
+    list-style: none;
+}
+
+html, 
+body {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background: linear-gradient(
+        to bottom,
+        rgba(138, 121, 240, 0),
+        rgba(138, 121, 240, 0.1)
+    );
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav_header{
+    padding: .75rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-dark);
+}
+
+.nav_logo .logo-dark{
+    display: none;
+}
+
+.nav_menu-btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;      
+}
+
+.nav_links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--primary-color-dark);
+    transition: transform .3s;
+    z-index: -1;
+
+}
+
+.nav_links.open{
+    transform: translateY(100%);
+}
+.nav_links a{
+    color: var(--white);
+}
+.nav_links a:hover{
+    color: var(--primary-color);
+}
+
+.nav_btns{
+    display: none;
+}
