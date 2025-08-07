@@ -12,5 +12,31 @@ menuBtn.addEventListener("click", (e) => {
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
 
-})
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+
+ScrollReveal().reveal(".header_image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".header_content h2", {
+  ...scrollRevealOption,
+  dealy: 500,
+});
+ScrollReveal().reveal(".header_content h1", {
+  ...scrollRevealOption,
+  dealy: 1000,
+});
+ScrollReveal().reveal(".header_content .section_description", {
+  ...scrollRevealOption,
+  dealy: 1500,
+});
+ScrollReveal().reveal(".header_form form", {
+  ...scrollRevealOption,
+  dealy: 2000,
+});
