@@ -30,7 +30,7 @@
     text-align: center;
 }
 .section_description{
-    color: var(--extra-light);
+    color: var(--text-light);
     text-align: center;
     line-height: 1.5rem;
 }
@@ -58,7 +58,7 @@
 }
 
 .logo img{
-    max-width: 65px;
+    max-width: 70px;
 }
 
 .logo span{
@@ -263,5 +263,37 @@ nav{
         display: flex;
         justify-content: flex-end;
     }
-    
+    .header_container{
+        padding-top: 0;
+        grid-template-columns: 
+        minmax(0, 1fr)
+        minmax(0, calc(var(--max-width) / 2))
+        minmax(0, calc(var(--max-width) / 2))
+        minmax(0, 1fr);
+
+    }
+    .header_image{
+        grid-area: 1/3/2/5;
+        height: 100%;
+    }
+    .header_image img{
+        padding-bottom: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: unset;
+        height: 100%;
+    }
+
+    .header_content{
+        padding-block: 2rem 10rem;
+        grid-area: 1/2/2/3;
+    }
+    .header_content h2{
+        margin-inline-start: unset;
+    }
+    .header_content :is(h1, .section_description){
+        text-align: left;
+    }
 }
