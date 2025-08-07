@@ -138,7 +138,7 @@ nav{
     gap: 2rem;
     padding: 2rem;
     background-color: var(--primary-color-dark);
-    transition: transform .3s;
+    transition: transform 0.5s;
     z-index: -1;
 
 }
@@ -155,4 +155,113 @@ nav{
 
 .nav_btns{
     display: none;
+}
+.header_container{
+    padding-top: 5rem;
+    display: grid;
+}
+
+.header_image{
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.header_image::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 5rem;
+    background-color: var(--primary-color);
+    opacity: 0.2;
+    border-top-left-radius: 2rem;
+    z-index: -1;
+}
+.header_content{
+    padding-block: 2rem 5rem;
+    padding-inline: 1rem;
+}
+
+.header_content h2{
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--white);
+    border-radius: 5rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.005);
+}
+.header_content h1{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+
+
+@media (width > 768px) {
+    nav{
+        position: static;
+        padding: 1.5rem 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        margin-bottom: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+    }
+
+    .nav_header{
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+
+    }
+    .nav_logo img{
+        max-width: 45px;
+    }
+    .nav_logo .logo-dark{
+        display: flex;
+    }
+    .nav_logo .logo-white{
+        display: none;
+    }
+    .nav_logo span{
+        font-size: 1.5rem;
+        color: var(--primary-color-dark);
+    }
+    .nav_menu-btn{
+        display: none;
+    }
+    .nav_links{
+        position: static;
+        width: fit-content;
+        padding: 0;
+        flex-direction: row;
+        background-color: transparent;
+        transform: none !important;
+    }
+    .nav_links a{
+        font-weight: 500;
+        color: var(--text-dark);
+
+    }
+    .nav_links li:last-child{
+        display: none;
+    }
+    .nav_btns{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
 }
