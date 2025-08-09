@@ -58,31 +58,601 @@
         <div class="input_group">
           <label for="location">Lugar de Recolección y Devolución</label>
           <input type="text" name="location"
-          id="location"
-          placeholder="Cali,Colombia"
-          >
+            id="location"
+            placeholder="Cali,Colombia">
         </div>
         <div class="input_group">
           <label for="start">Fecha de Recolección</label>
           <input type="text" name="start"
-          id="start"
-          placeholder="Agosto 16, 10:00 AM"
-          >
+            id="start"
+            placeholder="Agosto 16, 10:00 AM">
         </div>
         <div class="input_group">
           <label for="stop">Fecha de Devolución</label>
           <input type="text" name="stop"
-          id="stop"
-          placeholder="Agosto 16, 10:00 AM"
-          >
+            id="stop"
+            placeholder="Agosto 16, 10:00 AM">
         </div>
         <button class="btn">Buscar <i class="ri-search-line"></i></button>
       </form>
     </section>
 
     <section class="section_container about_container" id="about">
-      
+      <h2 class="section_header">Como funciona</h2>
+      <p class="section_description">
+        ¡Alquilar un auto con nosotros es sencillo! Elige tu vehículo,
+        selecciona tus fechas y completa tu reserva.
+        Nosotros nos encargamos del resto, asegurando un inicio sin
+        contratiempos para tu viaje.
+      </p>
+      <div class="about_grid">
+        <div class="about_card">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+          <h4>Escoge la localización</h4>
+          <p>
+            Elige entre una variedad de ubicaciones de recogida que se adapten
+            mejor a tus necesidades, ya sea cerca de tu hogar, trabajo o
+            aeropuerto.
+          </p>
+        </div>
+        <div class="about_card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Fecha de Recogida</h4>
+          <p>
+            Elige la fecha y hora exactas para recoger tu auto, asegurando que
+            esté listo cuando lo necesites.
+          </p>
+        </div>
+        <div class="about_card">
+          <span><i class="ri-roadster-fill"></i></span>
+          <h4>Reserva tu carro</h4>
+          <p>
+            Completa tu reserva con solo unos clics, y prepararemos tu vehículo
+            para garantizar una recogida sin inconvenientes.
+          </p>
+        </div>
+      </div>
     </section>
+
+    <section class="deals" id="deals">
+      <div class="section_container deals_container">
+        <h2 class="section_header">Ofertas de alquiler de carros más
+          populares</h2>
+        <p class="section_description">
+          Explora nuestras mejores ofertas de alquiler de autos, seleccionadas
+          para brindarte el mejor valor y experiencia. ¡Reserva ahora y conduce
+          tu vehículo favorito a un precio increíble!
+        </p>
+        <div class="deals_tabs">
+          <button class="btn active" data-id="Honda">Honda</button>
+          <button class="btn" data-id="Kia">Kia</button>
+          <button class="btn" data-id="Mazda">Mazda</button>
+          <button class="btn" data-id="Toyota">Toyota</button>
+          <button class="btn" data-id="Volkswagen">Volkswagen</button>
+        </div>
+        <div id="Honda" class="tab_content active">
+          <div class="deals_card">
+            <img src="assets/honda1.png" alt="deals">
+            <div class="deals_rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Honda CR-V </h4>
+            <div class="deals_card_grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 personas
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Pilotoautomatico
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Eletric
+              </div>
+            </div>
+            <hr>
+            <div class="deals_card_footer">
+              <h3>$180.000<span>/Por dia</span></h3>
+              <a href="#">
+                Alquila Ahora!
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/honda2.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(450)</span>
+              </div>
+              <h4>Honda City</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Pilotoautomatico
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 400km
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Eletric
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$150.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/honda3.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(450)</span>
+              </div>
+              <h4>Honda City Hatchback</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Pilotoautomatico
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 400km
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Eletric
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$200.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>        
+        </div>
+        <div id="Kia" class="tab_content">
+          <div class="deals_card">
+            <img src="assets/kia1.png" alt="deals">
+            <div class="deals_rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></i></span>
+              <span>(350)</span>
+            </div>
+            <h4>Kia Picanto</h4>
+            <div class="deals_card_grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 personas
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/1
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr>
+            <div class="deals_card_footer">
+              <h3>$120.000<span>/Por dia</span></h3>
+              <a href="#">
+                Alquila Ahora!
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/kia2.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(250)</span>
+              </div>
+              <h4>Kia Stonic</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$150.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/kia3.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(150)</span>
+              </div>
+              <h4>Kia Seltos</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$180.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>        
+        </div>
+        <div id="Mazda" class="tab_content">
+          <div class="deals_card">
+            <img src="assets/mazda1.png" alt="deals">
+            <div class="deals_rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></i></span>
+              <span>(200)</span>
+            </div>
+            <h4>Mazda 2</h4>
+            <div class="deals_card_grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 personas
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/1
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr>
+            <div class="deals_card_footer">
+              <h3>$130.000<span>/Por dia</span></h3>
+              <a href="#">
+                Alquila Ahora!
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/mazda2.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(100)</span>
+              </div>
+              <h4>Mazda 3 Sedán</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$200.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>
+          <div class="deals_card">
+              <img src="assets/mazda3.png " alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(180)</span>
+              </div>
+              <h4>Mazda 3 Hatchback</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$180.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+          </div>        
+        </div>
+        <div id="Toyota" class="tab_content">
+            <div class="deals_card">
+              <img src="assets/toyota1.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(250)</span>
+              </div>
+              <h4>Toyota Corolla Hybrid</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$180.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals_card">
+                <img src="assets/toyota2.png" alt="deals">
+                <div class="deals_rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></i></span>
+                  <span>(550)</span>
+                </div>
+                <h4> Toyota Corolla Cross Hybrid</h4>
+                <div class="deals_card_grid">
+                  <div>
+                    <span><i class="ri-group-line"></i></span> 4 personas
+                  </div>
+                  <div>
+                    <span><i class="ri-steering-2-line"></i></span> Manual
+                  </div>
+                  <div>
+                    <span><i class="ri-speed-up-line"></i></span> 18km/1
+                  </div>
+                  <div>
+                    <span><i class="ri-car-line"></i></span> Diesel
+                  </div>
+                </div>
+                <hr>
+                <div class="deals_card_footer">
+                  <h3>$150.000<span>/Por dia</span></h3>
+                  <a href="#">
+                    Alquila Ahora!
+                    <span><i class="ri-arrow-right-line"></i></span>
+                  </a>
+                </div>
+            </div>
+            <div class="deals_card">
+                <img src="assets/toyota3.png " alt="deals">
+                <div class="deals_rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></i></span>
+                  <span>(180)</span>
+                </div>
+                <h4>Toyota Corolla GR-S</h4>
+                <div class="deals_card_grid">
+                  <div>
+                    <span><i class="ri-group-line"></i></span> 4 personas
+                  </div>
+                  <div>
+                    <span><i class="ri-steering-2-line"></i></span> Manual
+                  </div>
+                  <div>
+                    <span><i class="ri-speed-up-line"></i></span> 18km/1
+                  </div>
+                  <div>
+                    <span><i class="ri-car-line"></i></span> Diesel
+                  </div>
+                </div>
+                <hr>
+                <div class="deals_card_footer">
+                  <h3>$190.000<span>/Por dia</span></h3>
+                  <a href="#">
+                    Alquila Ahora!
+                    <span><i class="ri-arrow-right-line"></i></span>
+                  </a>
+                </div>
+            </div>        
+        </div>  
+        <div id="Volkswagen" class="tab_content">
+            <div class="deals_card">
+              <img src="assets/volks1.png" alt="deals">
+              <div class="deals_rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></i></span>
+                <span>(200)</span>
+              </div>
+              <h4>Volkswagen Virtus</h4>
+              <div class="deals_card_grid">
+                <div>
+                  <span><i class="ri-group-line"></i></span> 4 personas
+                </div>
+                <div>
+                  <span><i class="ri-steering-2-line"></i></span> Manual
+                </div>
+                <div>
+                  <span><i class="ri-speed-up-line"></i></span> 18km/1
+                </div>
+                <div>
+                  <span><i class="ri-car-line"></i></span> Diesel
+                </div>
+              </div>
+              <hr>
+              <div class="deals_card_footer">
+                <h3>$100.000<span>/Por dia</span></h3>
+                <a href="#">
+                  Alquila Ahora!
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="deals_card">
+                <img src="assets/volks2.png" alt="deals">
+                <div class="deals_rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></i></span>
+                  <span>(350)</span>
+                </div>
+                <h4>Volkswagen Polo</h4>
+                <div class="deals_card_grid">
+                  <div>
+                    <span><i class="ri-group-line"></i></span> 4 personas
+                  </div>
+                  <div>
+                    <span><i class="ri-steering-2-line"></i></span> Manual
+                  </div>
+                  <div>
+                    <span><i class="ri-speed-up-line"></i></span> 18km/1
+                  </div>
+                  <div>
+                    <span><i class="ri-car-line"></i></span> Diesel
+                  </div>
+                </div>
+                <hr>
+                <div class="deals_card_footer">
+                  <h3>$120.000<span>/Por dia</span></h3>
+                  <a href="#">
+                    Alquila Ahora!
+                    <span><i class="ri-arrow-right-line"></i></span>
+                  </a>
+                </div>
+            </div>
+            <div class="deals_card">
+                <img src="assets/volks3.png " alt="deals">
+                <div class="deals_rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></i></span>
+                  <span>(300)</span>
+                </div>
+                <h4> Volkswagen Virtus GLI</h4>
+                <div class="deals_card_grid">
+                  <div>
+                    <span><i class="ri-group-line"></i></span> 4 personas
+                  </div>
+                  <div>
+                    <span><i class="ri-steering-2-line"></i></span> Manual
+                  </div>
+                  <div>
+                    <span><i class="ri-speed-up-line"></i></span> 18km/1
+                  </div>
+                  <div>
+                    <span><i class="ri-car-line"></i></span> Diesel
+                  </div>
+                </div>
+                <hr>
+                <div class="deals_card_footer">
+                  <h3>$150.000<span>/Por dia</span></h3>
+                  <a href="#">
+                    Alquila Ahora!
+                    <span><i class="ri-arrow-right-line"></i></span>
+                  </a>
+                </div>
+            </div>        
+        </div>       
+      </div>            
+    </section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>

@@ -40,3 +40,30 @@ ScrollReveal().reveal(".header_form form", {
   ...scrollRevealOption,
   dealy: 2000,
 });
+ScrollReveal().reveal(".abour_card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+const tabs = document.querySelector(".deals_tabs");
+
+tabs.addEventListener("click", (e) => {
+  const tabContents = document.querySelectorAll(
+    ".deals_container .tab_content"
+  );
+
+  Array.from(tabs.children).forEach((item) => {
+    if (item.dataset.id === e.target.dataset.id) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+  tabContents.forEach(item => {
+    if(item.id === e.target.dataset.id){
+      item.classList.add("active");
+    }else{
+       item.classList.remove("active");
+    }
+  });
+});
