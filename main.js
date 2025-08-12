@@ -67,3 +67,45 @@ tabs.addEventListener("click", (e) => {
     }
   });
 });
+
+ScrollReveal().reveal(".choose_image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".choose_content .section_header", {
+  ...scrollRevealOption,
+  dealy: 1500,
+});
+ScrollReveal().reveal("..choose_content .section_description", {
+  ...scrollRevealOption,
+  dealy: 1000,
+});
+ScrollReveal().reveal(".choose_card", {
+  ...scrollRevealOption,
+  duration: 1000,
+  delay: 1500,
+  interval: 500,
+});
+
+ScrollReveal().reveal(".subscribe_image img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".subscribe_content .section_header", {
+  ...scrollRevealOption,
+  dealy: 1500,
+});
+ScrollReveal().reveal(".subscribe_content .section_description", {
+  ...scrollRevealOption,
+  dealy: 1000,
+});
+ScrollReveal().reveal(".subscribe_content form", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+});
